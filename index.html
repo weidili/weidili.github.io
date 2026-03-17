@@ -147,23 +147,27 @@
         <h2>Research Interests</h2>
 
         <p>
-            I'm interested in a question that sits at the intersection of NLP, translation studies, and cultural understanding: can the cultural mediation skill that makes literary translators great — the judgment calls about adaptation, the audience awareness, the instinct for when to preserve foreignness and when to domesticate — be decomposed into learnable components and taught to a model through reinforcement learning?
+            Broadly: how do we teach AI systems the cultural and aesthetic judgment that humans use when working with creative artifacts — translated fiction, music, film, and beyond?
         </p>
 
+        <p style="margin-top: 20px; margin-bottom: 6px; font-weight: 600; font-size: 15px;">Literary Machine Translation & Cultural Adaptation</p>
         <p>
-            This question comes from years of being embedded in the Japanese-to-English fan translation community for anime, manga, and visual novels. The translation decisions that matter most in that space aren't linguistic — they're cultural. When <em>keigo</em> encodes a shifting power dynamic, what should the English reader get instead? When a light novel's comedy depends on <em>tsukkomi/boke</em> timing that doesn't map onto English, what do you sacrifice? When <em>mono no aware</em> shows up through seasonal imagery, how much of that can land for someone reading in translation?
+            My main focus. MT systems are getting linguistically good but remain culturally flat — they skip the adaptation decisions that human translators spend most of their energy on. I'm interested in whether cultural mediation (the judgment layer, not the bilingual layer) can be separated out and taught through reinforcement learning and preference feedback. Starting with Japanese-English, where I have the most domain knowledge.
         </p>
 
+        <p style="margin-top: 20px; margin-bottom: 6px; font-weight: 600; font-size: 15px;">Language-Heavy Fiction as a Stress Test</p>
         <p>
-            Current MT systems produce output that's often linguistically competent but culturally flat. I believe this cultural mediation layer is separable from bilingual linguistic ability and trainable on its own — through preference learning from people with cultural expertise rather than language expertise. The model supplies the linguistic competence; human cultural judgment teaches it everything else.
+            The fiction I care about most is work where language <em>is</em> the art — Monogatari's wordplay, Joyce's linguistic invention, visual novels with puns as plot mechanics. These are the hardest cases for translation (human or machine) because culture and language are completely entangled. I think they're also where the most interesting research questions live.
         </p>
 
+        <p style="margin-top: 20px; margin-bottom: 6px; font-weight: 600; font-size: 15px;">Cross-Cultural Aesthetic Recommendation</p>
         <p>
-            The fiction I care about most pushes this even further: works where language itself is the art. The Monogatari series builds scenes around Japanese wordplay that English can only gesture at. Joyce makes English do things it wasn't designed to do. Visual novels use language as mechanic — puns as plot points, <em>kanji</em> readings with double meanings. In these works, culture and language are so entangled that you can't address one without the other. That's the hardest version of this problem, and the version I want to work on.
+            A secondary thread: can taste in one creative domain help you discover things in another, across cultural boundaries? Currently exploring how mood and genre categories in music map differently across Japanese, American, and Brazilian listening contexts. Longer term, interested in connecting this to literary discovery — helping people find fiction from traditions they'd never otherwise encounter.
         </p>
 
+        <p style="margin-top: 20px; margin-bottom: 6px; font-weight: 600; font-size: 15px;">Preference Learning & Reward Modeling</p>
         <p>
-            Japanese-English is my starting point because it's what I know from the inside. But the framework is language-agnostic. Longer term, I want to build translation systems with enough cultural and linguistic intelligence to help people discover great fiction from traditions they'd otherwise never encounter — and eventually connect that to cross-cultural discovery across creative mediums: literature, music, film, and beyond.
+            The technical thread tying everything together. DPO, RLHF, and reward models are proving effective for aligning language models — I want to apply these tools to domains where "quality" is subjective and culturally conditioned rather than absolute.
         </p>
 
         <hr class="divider">
