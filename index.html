@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weidi Li</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2c2c2c;
+            background: #fafaf8;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .tagline {
+            font-size: 15px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .contact {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .contact a {
+            color: #888;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            letter-spacing: 0.3px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 15.5px;
+            color: #3a3a3a;
+        }
+
+        a {
+            color: #4a6fa5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project {
+            margin-bottom: 28px;
+            padding: 20px 24px;
+            background: #fff;
+            border: 1px solid #e8e8e4;
+            border-radius: 4px;
+        }
+
+        .project h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .project p {
+            font-size: 14.5px;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            font-size: 13.5px;
+            font-family: 'Menlo', 'Consolas', monospace;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 12px;
+            color: #777;
+            background: #f0f0ec;
+            padding: 2px 8px;
+            border-radius: 3px;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            font-family: -apple-system, sans-serif;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e8e8e4;
+            margin: 36px 0;
+        }
+
+        .background-item {
+            margin-bottom: 16px;
+        }
+
+        .background-item strong {
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #e8e8e4;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weidi Li</h1>
+            <p class="tagline">Incoming undergraduate at the University of Pittsburgh, Fall 2025</p>
+            <p class="tagline">Interested in literary machine translation, cultural adaptation, and preference learning for creative domains.</p>
+            <p class="contact"><a href="mailto:weidili92@gmail.com">weidili92@gmail.com</a></p>
+        </header>
+
+        <h2>Research Interests</h2>
+
+        <p>
+            I'm interested in a question that sits at the intersection of NLP, translation studies, and cultural understanding: can the cultural mediation skill that makes literary translators great — the judgment calls about adaptation, the audience awareness, the instinct for when to preserve foreignness and when to domesticate — be decomposed into learnable components and taught to a model through reinforcement learning?
+        </p>
+
+        <p>
+            This question comes from years of being embedded in the Japanese-to-English fan translation community for anime, manga, and visual novels. The translation decisions that matter most in that space aren't linguistic — they're cultural. When <em>keigo</em> encodes a shifting power dynamic, what should the English reader get instead? When a light novel's comedy depends on <em>tsukkomi/boke</em> timing that doesn't map onto English, what do you sacrifice? When <em>mono no aware</em> shows up through seasonal imagery, how much of that can land for someone reading in translation?
+        </p>
+
+        <p>
+            Current MT systems produce output that's often linguistically competent but culturally flat. I believe this cultural mediation layer is separable from bilingual linguistic ability and trainable on its own — through preference learning from people with cultural expertise rather than language expertise. The model supplies the linguistic competence; human cultural judgment teaches it everything else.
+        </p>
+
+        <p>
+            The fiction I care about most pushes this even further: works where language itself is the art. The Monogatari series builds scenes around Japanese wordplay that English can only gesture at. Joyce makes English do things it wasn't designed to do. Visual novels use language as mechanic — puns as plot points, <em>kanji</em> readings with double meanings. In these works, culture and language are so entangled that you can't address one without the other. That's the hardest version of this problem, and the version I want to work on.
+        </p>
+
+        <p>
+            Japanese-English is my starting point because it's what I know from the inside. But the framework is language-agnostic. Longer term, I want to build translation systems with enough cultural and linguistic intelligence to help people discover great fiction from traditions they'd otherwise never encounter — and eventually connect that to cross-cultural discovery across creative mediums: literature, music, film, and beyond.
+        </p>
+
+        <hr class="divider">
+
+        <h2>Current Projects</h2>
+
+        <div class="project">
+            <h3>Cultural Adaptation Error Analysis for Japanese-English Literary MT</h3>
+            <p>
+                Comparing professional human translations of Japanese fiction against outputs from GPT-4, Claude, and TranslateGemma. Building a taxonomy of cultural adaptation failure modes — reference flattening, register collapse, pragmatic mistranslation, tonal drift — and examining whether these errors are systematic, predictable by passage type, and invisible to standard automatic metrics (COMET, MetricX, BERTScore).
+            </p>
+            <span class="tag">literary MT</span>
+            <span class="tag">evaluation</span>
+            <span class="tag">cultural adaptation</span>
+            <span class="tag">in progress</span>
+            <br><br>
+            <a class="project-link" href="https://github.com/weidili/cultural-mt-analysis">github.com/weidili/cultural-mt-analysis</a>
+        </div>
+
+        <div class="project">
+            <h3>Cross-Cultural Aesthetic Mapping in Music</h3>
+            <p>
+                Using Spotify's public API to analyze how mood and genre descriptors (e.g., "nostalgic," "melancholic," "energetic") correspond to different acoustic profiles across Japanese, American, and Brazilian listening contexts. Testing whether categories that recommendation systems treat as universal are actually culturally particular.
+            </p>
+            <span class="tag">music information retrieval</span>
+            <span class="tag">cross-cultural</span>
+            <span class="tag">recommendation</span>
+            <span class="tag">in progress</span>
+            <br><br>
+            <a class="project-link" href="https://github.com/weidili/cross-cultural-music">github.com/weidili/cross-cultural-music</a>
+        </div>
+
+        <hr class="divider">
+
+        <h2>Background</h2>
+
+        <div class="background-item">
+            <p>
+                <strong>Japanese-English media translation community</strong> — I've followed the fan translation scene for visual novels, RPGMaker games, anime, and manga for several years, closely tracking discourse around cultural adaptation philosophy, localization quality debates, and the growing impact of machine translation on translation norms. This is where my research interests come from.
+            </p>
+        </div>
+
+        <div class="background-item">
+            <p>
+                <strong>Pittsburgh Classic Movie Club</strong> — I help organize and screen classic films for 50+ attendees. Curating across eras and traditions is its own kind of cross-cultural aesthetic work.
+            </p>
+        </div>
+
+        <div class="background-item">
+            <p>
+                <strong>Sports photography</strong> — Event and game photography for the Pittsburgh Thunderbirds (AUDL), Pittsburgh Riverhounds (USL), and the Reese's Senior Bowl (NFL/NCAA).
+            </p>
+        </div>
+
+        <footer>
+            Weidi Li · <a href="mailto:weidili92@gmail.com">weidili92@gmail.com</a>
+        </footer>
+    </div>
+</body>
+</html>
